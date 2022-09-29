@@ -18,14 +18,14 @@
       ansible.builtin.debug:
           msg: URL = {{URL}}
 
--  name: Task Level Variable
-   hosts: all
-   tasks:
-     - name: Print URL
-       ansible.builtin.debug:
-         msg: URL = {{URL}}
-         vars:
-           URL: hosts.example.com
+- name: Task Level Variable
+  hosts: all
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL = {{URL}}
+      vars:
+        URL: hosts.example.com
 
 # if we decleare a variable on tasklevel then only the task can access that variable
 
