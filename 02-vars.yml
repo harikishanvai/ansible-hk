@@ -36,3 +36,10 @@
     - name: Print URL
       ansible.builtin.debug:
         msg: URL = {{URL}}
+
+- name: Fact variable
+  hosts: all
+  tasks:
+    - name: Print Hostname
+      ansible.built.debug:
+        msg: Architecture = {{ansible_architecture}}
