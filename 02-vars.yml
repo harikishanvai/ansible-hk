@@ -30,3 +30,9 @@
 # if we decleare a variable on tasklevel then only the task can access that variable
 
 
+- name: Inventory Variable
+  hosts: all
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL = {{URL}}
