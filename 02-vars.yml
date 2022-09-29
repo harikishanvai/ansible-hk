@@ -26,6 +26,7 @@
          msg: URL = {{URL}}
          vars:
            URL: hosts.example.com
+
 # if we decleare a variable on tasklevel then only the task can access that variable
 
 
