@@ -1,1 +1,2 @@
-172.31.12.28 URL=hosts.example.com
+[FRONTEND]
+frontend.roboshop.internal
