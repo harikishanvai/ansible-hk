@@ -20,7 +20,7 @@
     state: started
     enabled: yes
 
-- name: Download and Extract Mongodd Schema
+- name: Download and Extract Mongodb Schema
   ansible.builtin.unarchive:
     src: https://github.com/roboshop-devops-project/mongodb/archive/main.zip
     dest: /tmp
