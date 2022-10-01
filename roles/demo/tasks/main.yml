@@ -1,4 +1,3 @@
-- name: Play on role
-  hosts: all
-  roles:
-    - demo:
+- name: Print URL
+  ansible.builtin.debug:
+    msg: URL = {{URL}}
