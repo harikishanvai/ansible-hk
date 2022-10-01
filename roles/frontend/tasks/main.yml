@@ -20,20 +20,17 @@
     dest: /usr/share/nginx/html/
     remote_src: yes
 
+- name: Copy Roboshop Configuration
+  ansible.builtin.copy:
+    src: roboshop.conf
+    dest: /etc/mginx/default.d/roboshop.conf
 
+- name : start nginx service
+  ansible.builtin.debug:
+    name: nginx
+    state: restarted
+    enabled: yes
 
 
 
   
-# Deploy the downloaded content in Nginx Default Location.
-  
-# ```
-#  # cd /usr/share/nginx/html
-# # rm -rf *
-#  # unzip /tmp/frontend.zip
-# # mv frontend-main/static/* .
-#  # mv frontend-main/localhost.conf /etc/nginx/default.d/roboshop.conf
-  
-#  ```
-  
-#  Finally restart the service once to effect the changes.
