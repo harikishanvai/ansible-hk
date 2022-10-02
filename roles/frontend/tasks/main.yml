@@ -4,7 +4,7 @@
     state: installed
 
 - name: Download and Extract Frontend
-  inclide_role:
+  include_role:
     name: common
     tasks_from: download
 
