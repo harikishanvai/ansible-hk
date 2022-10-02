@@ -14,8 +14,8 @@
         msg: Fruit Name = {{item.name}} , Avaliable Count = {{item.count}}
       loop:
         - {name: apple, count: 10}
-        - {name: bannana, count: 10}
-        - {name: orange, count: 10}
+        - {name: bannana, count: 30}
+        - {name: orange, count: 60}
 
 
 
