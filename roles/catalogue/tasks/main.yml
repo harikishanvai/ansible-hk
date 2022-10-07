@@ -38,6 +38,7 @@
 - name: Copy Systemd File
   ansible.builtin.copy:
     src: systemd.service
+    dest: /etc/systemd/system/catalogue.service
 
 - name: Start Catalogue Service
   ansible.builtin.systemd:
